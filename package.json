@@ -1,0 +1,30 @@
+{
+  "name": "oniri",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+      "bare-fs": "^4.5.2",
+    "bare-path": "^3.0.0",
+    "bare-process": "^4.2.2"
+  },
+  "imports": {
+    "process": {
+      "bare": "bare-process",
+      "default": "process"
+    },
+    "fs": {
+      "bare": "bare-fs",
+      "default": "fs"
+    },
+    "path": {
+      "bare": "bare-path",
+      "default": "path"
+    }
+  },
+  "devDependencies": {
+ 
+    "cmake-bare-bundle": "^2.1.5",
+    "cmake-fetch": "^1.4.8",
+     "bare-make": "^1.6.3"
+  }
+}

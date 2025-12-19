@@ -1,0 +1,15 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=git
+command=/Users/sce9sc/Documents/work/pear-test/template/node_modules/cmake-runtime-darwin-universal/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/sce9sc/Documents/work/pear-test/template/build/CMakeFiles/fc-tmp/github+holepunchto+libnapi/github+holepunchto+libnapi-gitclone.cmake
+source_dir=/Users/sce9sc/Documents/work/pear-test/template/build/_deps/github+holepunchto+libnapi-src
+work_dir=/Users/sce9sc/Documents/work/pear-test/template/build/_deps
+repository=https://github.com/holepunchto/libnapi.git
+remote=origin
+init_submodules=TRUE
+recurse_submodules=--recursive
+submodules=
+CMP0097=NEW
+      
