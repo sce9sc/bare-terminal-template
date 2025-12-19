@@ -3,6 +3,14 @@ import { program } from 'commander'
 
 try {
   console.log('Oniri CLI')
+  let args = process.argv
+
+  if(!!process.env?.ONIRI_ENV){
+          console.log('args= ',args)
+  }else{
+      args.unshift('oniri')
+      console.log('my args = ',args)
+  }
 
   const prompt = function readLine(prompt) {
     process.stdout.write(prompt)

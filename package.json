@@ -17,7 +17,14 @@
   },
   "scripts": {
     "refresh": "rm -rf node_modules & rm -rf package-lock.json & npm install",
-    "clean": "rm -rf node_modules & rm -rf package-lock.json"
+    "clean": "rm -rf node_modules & rm -rf package-lock.json",
+    "build": "npx bare-make generate && npx bare-make build",
+    "dev:node": "ONIRI_ENV=dev node ./src/bin/oniri.mjs",
+    "dev:bare": "ONIRI_ENV=dev bare ./src/bin/oniri.mjs",
+    "dev:bareNpx": "npx bare-run ./src/bin/oniri.mjs"
+  },
+  "bin": {
+    "oniri": "./src/bin/oniri.mjs"
   },
   "imports": {
     "process": {
