@@ -3,9 +3,20 @@
   "private": true,
   "type": "module",
   "dependencies": {
-      "bare-fs": "^4.5.2",
+    "bare-events": "^2.8.2",
+    "bare-fs": "^4.5.2",
     "bare-path": "^3.0.0",
-    "bare-process": "^4.2.2"
+    "bare-process": "^4.2.2",
+    "bare-subprocess": "^5.2.2",
+    "child_process": "npm:bare-node-child-process@^1.0.1",
+    "commander": "^14.0.2",
+    "events": "npm:bare-node-events@^1.0.1",
+    "fs": "npm:bare-node-fs@^1.0.2",
+    "path": "npm:bare-node-path@^1.0.1",
+    "process": "npm:bare-node-process@^1.0.1"
+  },
+  "scripts": {
+    "refresh": "rm -rf node_modules & rm -rf package-lock.json"
   },
   "imports": {
     "process": {
@@ -19,11 +30,19 @@
     "path": {
       "bare": "bare-path",
       "default": "path"
+    },
+    "events": {
+      "bare": "bare-events",
+      "default": "events"
+    },
+    "child_process": {
+      "bare": "bare-subprocess",
+      "default": "child_process"
     }
   },
   "devDependencies": {
+    "bare-make": "^1.6.3",
     "cmake-bare-bundle": "^2.1.5",
-    "cmake-fetch": "^1.4.8",
-     "bare-make": "^1.6.3"
+    "cmake-fetch": "^1.4.8"
   }
 }

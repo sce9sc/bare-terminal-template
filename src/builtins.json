@@ -17,5 +17,8 @@
   { "addon": "sodium-native" },
   { "addon": "udx-native" },
   { "addon": "bare-url" },
-  { "addon": "bare-process" }
+  { "addon": "bare-process" },
+  { "addon": "bare-events" },
+    { "addon": "bare-path" }
+  
 ]
