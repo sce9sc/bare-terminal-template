@@ -2,12 +2,7 @@ import process from 'process'
 import {program} from 'commander'
 
 try{
-console.log('Hello from Bare CLI')
-console.log('argv:', process.argv.slice(1))
-
-if (process.argv.includes('--help')) {
-  console.log('Usage: myapp [options]')
-}
+console.log('Oniri CLI')
 
 program
   .name('string-util')
@@ -24,7 +19,7 @@ program.command('split')
     console.log(str.split(options.separator, limit));
   });
 
-program.parse();
+program.parse(process.argv);
 
 }catch(e){
   console.error('Error in oniri.mjs:', e);
