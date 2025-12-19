@@ -73,6 +73,7 @@ jobs:
         if: ${{ matrix.platform == 'win32' }}
       - run: choco install nasm
         if: ${{ matrix.platform == 'win32' }}
+      - run: rm -rf build
       - run: npm install -g bare-make
       - run: npm install
       - run: bare-make generate --platform ${{ matrix.platform }} --arch ${{ matrix.arch }} ${{ matrix.flags }}
